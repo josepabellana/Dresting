@@ -3,8 +3,15 @@
         <img class="logo" src="../../assets/logo-v1-0.png">
         
         <div class="nav__dropdowns">
-            <h3 class="dropdown">Producto</h3>
-            <h3 class="dropdown">Precios</h3>
+            
+            <h3 class="dropbtn" (click)="dropShowProduct()" >Producto
+            <div id="dropdown__product" class="dropdown-content">
+                <h4>Vestidos</h4>
+                <a href="#">Encuentra un vestido para alquilar</a>
+                <a href="#">Pon tu vestido en alquiler</a>
+              </div>
+            </h3>
+            <h3 class="dropbtn">Precios</h3>
         </div>
 
         <div class="nav__links">
