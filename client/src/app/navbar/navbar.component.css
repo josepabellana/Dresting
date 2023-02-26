@@ -4,5 +4,32 @@ main {
     background-color: var(--nav-bg-color);
     color: var(--nav-text-color);
     box-shadow: 0px 1px 2px var(--shadow-color);
+    padding: 10px;
   }
 
+ 
+
+  h3 {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .logo{
+    max-width: 150px;
+  }
+  .bigNav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__dropdowns{
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__links{
+    display: flex;
+    align-items: center;
+  }

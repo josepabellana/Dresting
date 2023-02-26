@@ -15,3 +15,20 @@
     transition: 0.1s;
     font-family: 'Ubuntu', sans-serif;
   }
+
+
+  button {
+    margin: 10px 20px;
+    width: 80px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    color: var(--nav-text-color);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+  }
