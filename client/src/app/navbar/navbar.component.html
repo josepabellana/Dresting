@@ -8,9 +8,20 @@
         </div>
 
         <div class="nav__links">
-            <button (click)="auth.loginWithRedirect()">Login</button>
+            <ng-container *ngIf="auth.isAuthenticated$ | async; else loggedOut">
+                <button (click)="auth.logout({ logoutParams: { returnTo: document.location.origin } })">
+                    <div *ngIf="auth.user$ | async as user">
+                        {{ user.name }}
+                    </div>
+                </button>
+              </ng-container>
+          
+              <ng-template #loggedOut>
+                <button (click)="auth.loginWithRedirect()">Log in</button>
+              </ng-template>
             <h3>Me gusta</h3>
             <h3>Atención al Cliente</h3>
         </div>
     </div>
 </main>
+
