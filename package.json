@@ -1,0 +1,19 @@
+{
+  "name": "dresting",
+  "version": "1.0.0",
+  "description": "Rent dresses",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git add . && git commit -m 'x' && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josepabellana/Dresting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josepabellana/Dresting/issues"
+  },
+  "homepage": "https://github.com/josepabellana/Dresting#readme"
+}
