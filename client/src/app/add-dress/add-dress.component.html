@@ -58,8 +58,9 @@
         <label for="calendarUntilDate">Calendar Until Date</label>
         <input type="date" id="calendarUntilDate" formControlName="calendarUntilDate">
 
+        <p>* INDICATES A REQUIRED FIELD</p>
         <div class="buttons">
-            <button>Next</button>
+            <button [disabled]="!createForm.valid">Send to Review</button>
           </div>
     </form>
 </main>
