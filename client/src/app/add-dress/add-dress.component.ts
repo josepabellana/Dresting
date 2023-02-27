@@ -8,16 +8,23 @@ import { FormBuilder, Validators } from '@angular/forms';
 export class AddDressComponent {
 
   createForm = this.fb.group({
-    category: [''],
-    brand: [''],
-    itemName: [''],
-    size:[''],
-    color:[''],
-    description: [''],
+    category: ['',Validators.required],
+    brand: ['',Validators.required],
+    itemName: ['',Validators.required],
+    size:['XL',Validators.required],
+    color:['BEIGE',Validators.required],
+    description: ['',Validators.required],
     notes: [''],
-    price: [0]
+    price: [25,Validators.required]
   });
 
 
   constructor(private fb: FormBuilder){}
+
+  handleSubmit() {
+    const formVal = this.createForm.value;
+    console.log(formVal)
+    this.createForm.controls['itemName'].reset()
+    
+  }
 }

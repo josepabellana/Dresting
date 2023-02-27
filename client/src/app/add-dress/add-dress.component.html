@@ -1,14 +1,14 @@
 <main>
-    <form>
+    <form id="createForm" [formGroup]="createForm" (ngSubmit)="handleSubmit()">
         <h1>Product Information</h1>
         <label for="category"> CATEGORY*</label>
-        <input id="category">
+        <input id="category" formControlName="category">
 
         <label for="brand"> BRAND*</label>
-        <input id="brand">
+        <input id="brand" formControlName="brand">
 
         <label for="itemName"> ITEM NAME*</label>
-        <input id="itemName">
+        <input id="itemName" formControlName="itemName">
 
         <label for="size"> SIZE*</label>
         <select id="size" formControlName="size">
@@ -41,8 +41,20 @@
             <option  ngValue="WHITE">WHITE</option>
             <option ngValue="YELLOW">YELLOW</option>
             <option ngValue="PHANTOM">PHANTOM</option>
- 
         </select>
+
+        <label for="description">DESCRIPTION*</label>
+        <textarea id="description" formControlName="description" placeholder=""></textarea>
+
+        <label for="notes">NOTES TIPs</label>
+        <textarea id="notes" formControlName="notes" placeholder=""></textarea>
+
+        <label for="price">PRICE*</label>
+        <input type="number" id="price" formControlName="price" value="0">
+
+        <div class="buttons">
+            <button>Next</button>
+          </div>
     </form>
 </main>
 
