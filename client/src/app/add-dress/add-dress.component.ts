@@ -15,6 +15,8 @@ export class AddDressComponent {
     color:['BEIGE',Validators.required],
     description: ['',Validators.required],
     notes: [''],
+    calendarFromDate: ['',Validators.required],
+    calendarUntilDate: ['',Validators.required],
     price: [25,Validators.required]
   });
 
