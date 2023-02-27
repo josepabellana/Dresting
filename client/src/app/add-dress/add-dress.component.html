@@ -59,6 +59,22 @@
         <input type="date" id="calendarUntilDate" formControlName="calendarUntilDate">
 
         <p>* INDICATES A REQUIRED FIELD</p>
+
+        <!-- <p>Images</p>
+        <input type="file" class="file-input"
+            (change)="onFileSelected($event)" #fileUpload>
+
+        <div class="file-upload">
+
+        {{fileName || "No file uploaded yet."}}
+
+            <button mat-mini-fab color="primary" class="upload-btn"
+            (click)="fileUpload.click()">
+                <mat-icon>attach_file</mat-icon>
+            </button>
+        </div> -->
+
+
         <div class="buttons">
             <button [disabled]="!createForm.valid">Send to Review</button>
           </div>
