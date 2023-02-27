@@ -30,7 +30,7 @@ module.exports = (sequelize, DataTypes) => sequelize.define('Dress', {
     allowNull: false
   },
   price: {
-    type: DataTypes.NUMBER,
+    type: DataTypes.INTEGER,
     allowNull: false
   },
   calendarFromDate: {

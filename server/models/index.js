@@ -5,7 +5,7 @@ const path = require('path');
 const Sequelize = require('sequelize');
 const db = {};
 
-const sequelize = new Sequelize('dresting', 'josepabellanapuyol', '', {
+const sequelize = new Sequelize(process.env.DBNAME, process.env.DBUSER, process.env.DBPASSWORD, {
   host: 'localhost',
   dialect: 'postgres',
   logging: false,

@@ -2,6 +2,7 @@
 
 const db = require('../models');
 const { Dress} = db;
+
 async function addDress(req,res) {
   try {
     const info = req.body;
