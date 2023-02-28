@@ -9,12 +9,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { environment as env } from '../environments/environment';
 import { DressListComponent } from './dress-list/dress-list.component';
 import { AddDressComponent } from './add-dress/add-dress.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     DressListComponent,
-    AddDressComponent
+    AddDressComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

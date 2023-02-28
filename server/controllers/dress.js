@@ -9,11 +9,11 @@ async function addDress(req,res) {
     const newDress = await Dress.create({
       ...info
     });
-    res.status(201).json({ "statusCode": 200, "message": `Dress created${newDress}` }); // TODO: login by default or redirect to login page on client?
+    res.status(201).json({ "statusCode": 200, "message": 'Dress created:'+ JSON.stringify(newDress)} ); // TODO: login by default or redirect to login page on client?
   } catch (error) {
     console.log(error);
     res.status(500).json({ "statusCode": 200, "message": error });
   }
 };
 
-exports.dressController = {addDress}
+exports.addDress = addDress
