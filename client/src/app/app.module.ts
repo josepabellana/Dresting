@@ -10,13 +10,17 @@ import { environment as env } from '../environments/environment';
 import { DressListComponent } from './dress-list/dress-list.component';
 import { AddDressComponent } from './add-dress/add-dress.component';
 import { HomeComponent } from './home/home.component';
+import { RentExplanationComponent } from './rent-explanation/rent-explanation.component';
+import { LeesExplanationComponent } from './lees-explanation/lees-explanation.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     DressListComponent,
     AddDressComponent,
-    HomeComponent
+    HomeComponent,
+    RentExplanationComponent,
+    LeesExplanationComponent
   ],
   imports: [
     BrowserModule,
