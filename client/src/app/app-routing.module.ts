@@ -7,16 +7,7 @@ import { LeesExplanationComponent } from './lees-explanation/lees-explanation.co
 import { RentExplanationComponent } from './rent-explanation/rent-explanation.component';
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent,children: [
-    {
-      path: 'rent',
-      component: RentExplanationComponent
-    },
-    {
-      path: 'lees',
-      component: LeesExplanationComponent
-    }]
-  },
+  {path: 'home', component: HomeComponent},
   {path: 'seller', component: AddDressComponent},
   { path: '**', redirectTo: '/home', pathMatch: 'full'}
 ];
