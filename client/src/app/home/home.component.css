@@ -3,7 +3,7 @@
     position: relative;
     height: 26.25rem;
     background-image: url('../../assets/main-section-bg.jpeg');
-    background-size: cover; /* or "contain" depending on what you want */
+    background-size: cover; 
     background-position: center center;
     background-repeat: no-repeat;
     display: flex;
