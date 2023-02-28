@@ -1,0 +1,6 @@
+.home__container{
+    overflow: hidden;
+    position: relative;
+    height: 26.25rem;
+    background-image: src('../../assets/main-section-bg.jpeg');
+}

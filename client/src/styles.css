@@ -33,11 +33,10 @@ button:hover {
 }
 
 section {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
+  width: 100vw;
 }
 
 img {
   vertical-align: middle;
 }
+
