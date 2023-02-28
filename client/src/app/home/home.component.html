@@ -5,6 +5,6 @@
         <div *ngIf="selected === 'owner'; else unselectedOwner"class="home__switch-sel selected"><h3 >For Owners</h3></div>
         <ng-template #unselectedOwner> <div (click)="onClick('owner')" class="home__switch-sel"><h3 >For Owners</h3></div></ng-template>
         <div *ngIf="selected === 'lessees'; else unselectedLesser" class="home__switch-sel selected" (click)="onClick('lessees')"><h3>For Lessees</h3></div>
-        <ng-template #unselectedLesser> <div><h3 (click)="onClick('lessees')" class="home__switch-sel">For Lessees</h3></div></ng-template>
+        <ng-template #unselectedLesser> <div (click)="onClick('lessees')" class="home__switch-sel"><h3>For Lessees</h3></div></ng-template>
     </div>
 </section>
