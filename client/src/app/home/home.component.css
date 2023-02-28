@@ -24,10 +24,12 @@
 }
 
 .home__switch h3{
-    color:gray
+    color:gray;
+    padding: 10px;
 }
 
 .selected{
-    background-color: var(--primary-bg-color);
+    background-color: var(--nav-text-color);
+    
     border-radius: 2.125rem;
 }
