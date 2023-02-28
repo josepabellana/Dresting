@@ -2,9 +2,9 @@
     <h1>How it Works</h1>
     <h4>Looking for a dress? Or renting one out? Here's how <br> Dresting bring owners and lessees together</h4>
     <div class="home__switch">
-        <h3 *ngIf="selected === 'owner'; else unselectedOwner"class="home__switch-owner selected">For Owners</h3>
-        <ng-template #unselectedOwner> <h3 (click)="onClick('owner')" class="home__switch-owner">For Owners</h3></ng-template>
-        <h3 *ngIf="selected === 'lessees'; else unselectedLesser" class="home__switch-lessees selected" (click)="onClick('lessees')">For Lessees</h3>
-        <ng-template #unselectedLesser> <h3 (click)="onClick('lessees')" class="home__switch-lessees">For Owners</h3></ng-template>
+        <h3 *ngIf="selected === 'owner'; else unselectedOwner"class="home__switch-sel selected">For Owners</h3>
+        <ng-template #unselectedOwner> <h3 (click)="onClick('owner')" class="home__switch-sel">For Owners</h3></ng-template>
+        <h3 *ngIf="selected === 'lessees'; else unselectedLesser" class="home__switch-sel selected" (click)="onClick('lessees')">For Lessees</h3>
+        <ng-template #unselectedLesser> <h3 (click)="onClick('lessees')" class="home__switch-sel">For Lessees</h3></ng-template>
     </div>
 </section>

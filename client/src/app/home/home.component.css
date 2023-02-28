@@ -20,8 +20,14 @@
     gap:20px;
     border-radius: 2.125rem;
     background-color: #f9f9f9;
+    cursor: pointer;
 }
 
 .home__switch h3{
-    
+    color:gray
+}
+
+.selected{
+    background-color: var(--primary-bg-color);
+    border-radius: 2.125rem;
 }
