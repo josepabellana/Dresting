@@ -1,10 +1,10 @@
 :root {
   --primary-bg-color: #fffafbff;
-  --nav-bg-color: #7de2d1ff;
+  --nav-bg-color: #FAD6BE;
   --nav-text-color: #fffafbff;
-  --text-accent-color: #339989ff;
-  --button-color: #339989ff;
-  --text-color: #2b2c28ff;
+  --text-accent-color: #61A9AD;
+  --button-color: #BEF7FA;
+  --text-color: #AD8A72;
   --shadow-color: rgb(181, 184, 171);
   --error: #c83f3f;
 }
