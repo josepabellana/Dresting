@@ -1,40 +1,43 @@
 :root {
-    --primary-bg-color:  #fffafbff;
-    --nav-bg-color: #7de2d1ff;
-    --nav-text-color: #fffafbff;
-    --text-accent-color: #339989ff;
-    --button-color: #339989ff;
-    --text-color: #2b2c28ff; 
-    --shadow-color: rgb(181, 184, 171); 
-    --error: #c83f3f;
-  }
-  
-  * {
-    margin: 0;
-    box-sizing: border-box;
-    transition: 0.1s;
-    font-family: 'Ubuntu', sans-serif;
-  }
+  --primary-bg-color: #fffafbff;
+  --nav-bg-color: #7de2d1ff;
+  --nav-text-color: #fffafbff;
+  --text-accent-color: #339989ff;
+  --button-color: #339989ff;
+  --text-color: #2b2c28ff;
+  --shadow-color: rgb(181, 184, 171);
+  --error: #c83f3f;
+}
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.1s;
+  font-family: "Ubuntu", sans-serif;
+}
 
-  button {
-    margin: 10px 20px;
-    width: 80px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: var(--button-color);
-    color: var(--nav-text-color);
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: var(--nav-bg-color);
-    color: var(--nav-text-color);
-  }
+button {
+  margin: 10px 20px;
+  width: 80px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-color);
+  color: var(--nav-text-color);
+  cursor: pointer;
+}
 
+button:hover {
+  background-color: var(--nav-bg-color);
+  color: var(--nav-text-color);
+}
 
-  section{
-    width: 100%;
-    object-fit: cover;
-  }
+section {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+img {
+  vertical-align: middle;
+}
